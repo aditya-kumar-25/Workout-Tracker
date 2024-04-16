@@ -91,11 +91,6 @@ function toggleLoginOrSignup(){
 
 
 
-
-
-
-
-
 // Goal Selector
 
 const workoutGoals = [,
@@ -463,6 +458,8 @@ function gotoWorkoutScheduler(){
   workoutTrackingParent.classList.toggle('hidden');
   workoutScheduleParent.classList.toggle('flex');
   workoutScheduleParent.classList.toggle('hidden');
+  firstRender = true;
+  refreshUpdates();
 }
 
 refreshUpdates();
